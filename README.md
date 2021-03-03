@@ -1,4 +1,4 @@
-# authentication-jws
+# authentication-jwt
 
 A simple (and secure) JWT authentication demonstration. It was coded using:
 - NodeJS
