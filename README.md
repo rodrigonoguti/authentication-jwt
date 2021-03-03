@@ -12,4 +12,4 @@ Steps to run:
 - In the root directory, run:
 - ```yarn install```
 - ```yarn dev```
-- Avaiable routes are listed in ```.src/routes.ts``` file.
+- Available routes are listed in ```.src/routes.ts``` file.
