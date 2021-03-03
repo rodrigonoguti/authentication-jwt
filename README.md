@@ -8,6 +8,7 @@ A simple (and secure) JWT authentication demonstration. It was coded using:
 
 Steps to run:
 - Clone the repository
+- Create an ```.env``` file with your ```JWT_SECRET``` constant (in root directory)
 - In the root directory, run:
 - ```yarn install```
 - ```yarn dev```
