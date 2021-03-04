@@ -6,14 +6,20 @@ import jwt from 'jsonwebtoken';
 import { UserRepository } from "../repositories/UserRepository";
 
 function generateToken({ id, email }) {
-  return (
-    jwt.sign({
+
+  const sign = jwt.sign(
+    {
       id,
       email
-    }, process.env.JWT_SECRET, {
+    },
+    process.env.JWT_PRIVATE_KEY,
+    {
+      algorithm: 'RS256',
       expiresIn: 86400 // 1 day
-    })
+    }
   );
+
+  return sign;
 }
 
 class UserController {
